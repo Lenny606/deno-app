@@ -12,6 +12,11 @@ const app = new Application();
 app.use(router.routes());
 app.use(router.allowedMethods());
 
+//MW - all needs to be async !!!!
+app.use(async (ctx, next) => {
+    await next();
+})
+
 
 
 await app.listen({ port: 3000 });
