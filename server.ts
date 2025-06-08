@@ -1,6 +1,6 @@
 import { serve } from "https://deno.land/std/http/server.ts"
 import { Application } from "jsr:@oak/oak/application";
-import {router} from "routes/router.ts"
+import router from "./routes/router.ts"
 // Create a server instance listening on port 3000
 // Deno.serve({port: 3000}, (_req) => {
 //     return new Response("Hello, World!");

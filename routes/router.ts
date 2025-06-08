@@ -1,4 +1,4 @@
-import { Router } from "jsr:@oak/oak/application";
+import { Router } from "jsr:@oak/oak/router";
 
 const router = new Router();
 
